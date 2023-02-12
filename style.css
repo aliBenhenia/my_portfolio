@@ -1,0 +1,365 @@
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    /* height: 10000px; */
+    background-color: #0A1930!important;
+}
+#mm{
+    margin-top: 10%;
+}
+.logo
+{
+    color: #64FFDA!important;
+    font-weight: bold;
+}
+#head
+{
+    top: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+#nav
+{
+    background-color: #0A1930!important;
+    color: aliceblue;
+}
+.dd
+{
+  color: #8892B0!important;
+  font-family: monospace;
+}
+.name
+{
+  color: #8892B0!important;
+  font-family: monospace;
+  line-height: 2;
+}
+.dd1
+{
+  color: #64FFDA!important;
+  font-family: monospace;
+  font-size: 1.3rem;
+  margin-top: 11%;
+}
+.bn
+{
+  color: #64FFDA!important;
+}
+.dd:hover
+{
+    color: #64FFDA!important;
+}
+#cv
+{
+    color: #64FFDA;
+    border: 1px solid #64FFDA;
+    outline: 0;
+}
+#cv:hover
+{
+    background-color: #64ffef6d;
+}
+.hr
+{
+    color: #64FFDA;
+    border: 1px solid #64FFDA;
+    outline: 0;
+    padding: 1%;
+    width: 33%;
+}
+.hr:hover{
+    background-color: #64ffef6d;
+    color: #64FFDA;
+}
+#about
+{
+    margin-top: 200px!important;
+    color: red;
+}
+#line
+{
+    color: red;
+    height: 1px;
+    display: inline-block;
+    float: left;
+    width: 300px;
+    background-color: #8892B0;
+}
+#my_pic
+{
+    border-radius: 6px;
+}
+#pic
+{
+    position: relative;
+}
+#pic .hvr
+{
+    position:absolute;
+    width: 83.5%;
+    height: 100%;
+    background-color: #64ffdbab;
+    top: 0;
+    border-radius: 6px;
+    transition: all .5s;
+}
+#pic .hvr:hover{
+    /* top: 6%;
+    left: 9%; */
+    transform: translate(6%,8%);
+    background-color: #ffffff00;
+    border: 2px solid #64ffdbab;
+}
+.container-skills {
+	margin: 20px auto 0 auto;
+  max-width: 400px;
+  margin-top: 20%;
+}
+
+.bar {
+  position: relative;
+	background-color: #d8d8d8;
+	height: 10px;
+	margin: 0 0 20px 0;
+}
+.bar-fill {
+  position: absolute;
+  height: 10px;
+}
+.bar-title {
+  position: relative;
+	font-size: 1em;
+	text-align: left;
+	margin: 0 0 5px 0;
+}
+.percent {
+  position: absolute;
+	right: 0;
+}
+
+/* Animations Below - Replace ease-out with infinite for infinite loop*/
+/*Edit here for html*/  
+.bar-fill-html {
+	width: 90%;
+  background-color: #e44d26;
+	animation: bar-fill-html 2s ease-out;
+	-moz-animation: bar-fill-html 2s ease-out;
+  -webkit-animation: bar-fill-html 2s ease-out;
+}
+@keyframes bar-fill-html {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-moz-keyframes bar-fill-html {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes bar-fill-html {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+/*Edit here for Javascript*/
+.bar-fill-javascript {
+	width: 60%;
+  background-color: #f8dc3d;
+  animation: bar-fill-javascript 2s ease-out;
+	-moz-animation: bar-fill-javascript 2s ease-out;
+  -webkit-animation: bar-fill-javascript 2s ease-out;
+}
+@keyframes bar-fill-javascript {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+@-moz-keyframes bar-fill-javascript {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+@-webkit-keyframes bar-fill-javascript {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 60%;
+    }
+}
+/*Edit here for Jquery*/
+.bar-fill-jquery{
+	width: 70%;
+  background-color: crimson;
+  animation: bar-fill-jquery 2s ease-out;
+	-moz-animation: bar-fill-jquery 2s ease-out;
+  -webkit-animation: bar-fill-jquery 2s ease-out;
+}
+@keyframes bar-fill-jquery {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+@-moz-keyframes bar-fill-jquery {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+@-webkit-keyframes bar-fill-jquery {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+/*Edit here for Responsive*/
+.bar-fill-responsive{
+	width: 90%;
+  background-color: #429f46;
+  animation: bar-fill-responsive 2s ease-out;
+	-moz-animation: bar-fill-responsive 2s ease-out;
+  -webkit-animation: bar-fill-responsive 2s ease-out;
+}
+@keyframes bar-fill-responsive {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-moz-keyframes bar-fill-responsive {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+@-webkit-keyframes bar-fill-responsive {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+/*Edit here for Photoshop*/
+.bar-fill-photoshop{
+	width: 20%;
+  background-color: #0a73dc;
+  animation: bar-fill-photoshop 2s ease-out;
+	-moz-animation: bar-fill-photoshop 2s ease-out;
+  -webkit-animation: bar-fill-photoshop 2s ease-out;
+}
+@keyframes bar-fill-photoshop {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+@-moz-keyframes bar-fill-photoshop {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+@-webkit-keyframes bar-fill-photoshop {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+.card_p
+{
+    background-color: #132642;
+    color: #fff;
+    margin-left: 2%;
+    transition: all .3s;
+}
+.card_p i{
+    font-size: 2rem;
+}
+.hg
+{
+    background-color: #fff;
+}
+.git
+{
+    float: left;
+}
+.demo
+{
+    float: right;
+}
+.card_p:hover
+{
+    transform: translate(10px, 10px);
+}
+.ct
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+footer
+{
+    margin-top: 3rem;
+    color: #8892B0!important;
+    text-align: center;
+    font-size: 15px;
+}
+footer i{
+    margin-left: 5%;
+}
+footer i:hover{
+    color: #64FFDA;
+}
