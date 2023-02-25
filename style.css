@@ -374,3 +374,17 @@ footer i{
 footer i:hover{
     color: #64FFDA;
 }
+#lang
+{
+    margin-top: 5%;
+    margin-bottom: 8%;
+}
+#lang i{
+    font-size: 2rem;
+    margin-left: 2rem;
+    user-select: none;
+    color: #64FFDA;
+}
+#lang i:hover{
+    color: #d8d8d8;
+}
