@@ -124,7 +124,8 @@ body,html
 .container-skills {
 	margin: 20px auto 0 auto;
   max-width: 400px;
-  margin-top: 20%;
+  margin-top: 9%;
+  margin-bottom: 9%;
 }
 
 .bar {
@@ -291,7 +292,7 @@ body,html
 }
 /*Edit here for Photoshop*/
 .bar-fill-photoshop{
-	width: 20%;
+	width: 75%;
   background-color: #0a73dc;
   animation: bar-fill-photoshop 2s ease-out;
 	-moz-animation: bar-fill-photoshop 2s ease-out;
@@ -326,11 +327,14 @@ body,html
 }
 .card_p
 {
+    border-radius: 14px;
     background-color: #132642;
     color: #fff;
     margin-left: 2%;
     transition: all .3s;
+    overflow: hidden;
 }
+
 .card_p i{
     font-size: 2rem;
 }
@@ -353,6 +357,7 @@ body,html
 .card_p:hover
 {
     transform: translate(10px, 10px);
+    transform: translate(-10px, -10px);
 }
 .ct
 {
@@ -388,4 +393,8 @@ footer i:hover{
 }
 #lang i:hover{
     color: #d8d8d8;
+}
+footer a{
+    text-decoration: none;
+    color: #8892B0!important;
 }
