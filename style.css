@@ -4,7 +4,7 @@ html
 }
 ::selection
 {
-    background-color: #64FFDA;
+    background-color: #FC8D16;
     /* color: aliceblue; */
 }
 body,html
@@ -18,7 +18,7 @@ body,html
 }
 .logo
 {
-    color: #64FFDA!important;
+    color: #FC8D16!important;
     font-weight: bold;
 }
 #head
@@ -46,40 +46,40 @@ body,html
 }
 .dd1
 {
-  color: #64FFDA!important;
+  color: #FC8D16!important;
   font-family: monospace;
   font-size: 1.3rem;
   margin-top: 11%;
 }
 .bn
 {
-  color: #64FFDA!important;
+  color: #FC8D16!important;
 }
 .dd:hover
 {
-    color: #64FFDA!important;
+    color: #FC8D16!important;
 }
 #cv
 {
-    color: #64FFDA;
-    border: 1px solid #64FFDA;
+    color: #FC8D16;
+    border: 1px solid #FC8D16;
     outline: 0;
 }
 #cv:hover
 {
-    background-color: #64ffef6d;
+    background-color: #fc8d1667;
 }
 .hr
 {
-    color: #64FFDA;
-    border: 1px solid #64FFDA;
+    color: #FC8D16;
+    border: 1px solid #FC8D16;
     outline: 0;
     padding: 1%;
     width: 33%;
 }
 .hr:hover{
-    background-color: #64ffef6d;
-    color: #64FFDA;
+    background-color: #fc8d1667;
+    color: #FC8D16;
 }
 #about
 {
@@ -109,17 +109,15 @@ body,html
     position:absolute;
     width: 83.5%;
     height: 100%;
-    background-color: #64ffdbab;
+    background-color: #fc8d1667;
     top: 0;
     border-radius: 6px;
     transition: all .5s;
 }
 #pic .hvr:hover{
-    /* top: 6%;
-    left: 9%; */
     transform: translate(6%,8%);
     background-color: #ffffff00;
-    border: 2px solid #64ffdbab;
+    border: 3px solid #fc8d1667;
 }
 .container-skills {
 	margin: 20px auto 0 auto;
@@ -377,7 +375,7 @@ footer i{
     margin-left: 5%;
 }
 footer i:hover{
-    color: #64FFDA;
+    color: #FC8D16;
 }
 #lang
 {
@@ -388,7 +386,7 @@ footer i:hover{
     font-size: 2rem;
     margin-left: 2rem;
     user-select: none;
-    color: #64FFDA;
+    color: #FC8D16;
     margin-top: 2rem;
 }
 #lang i:hover{
