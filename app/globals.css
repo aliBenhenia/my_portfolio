@@ -2,32 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
+html
+{
+  scroll-behavior: smooth;
+}
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-primary: #64ffda; /* Example primary color */
+  --color-secondary: #0A1930; /* Example secondary color */
+  --color-third: #CCD6F5; /* Example third color */
+  /* Add more custom color variables as needed */
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-secondary);
+  color: white;
+  margin: 0;
+  padding: 0;
+  height: 100000px;
+ 
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+

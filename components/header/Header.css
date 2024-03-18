@@ -1,0 +1,249 @@
+.header
+{
+    transition: 0.5s;
+    width: 100%;
+    background-color: #0a193071;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.header .logo
+{
+    font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+    color: var(--color-primary);
+}
+.header ul li 
+{
+    margin-top: 9px;
+}
+.header ul li a
+{
+    color: var(--color-third);
+    font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+    font-size: 13px;
+}
+.header ul li a:hover
+{
+    color: var(--color-primary);
+}
+
+.header .resume
+{
+    background-color: transparent;
+    color: var(--color-third);
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace;
+    font-size: 13px;
+    transition: 0.5s;
+    border: .9px solid var(--color-primary);
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.header .indexBinary
+{
+    color: var(--color-primary);
+}
+#navbar-mobile
+{
+  height: 100vh;
+}
+
+
+/*animation*/
+  
+  @keyframes bottomright {
+    0% {
+      width: 0;
+      height: 0;
+      padding-top: 0;
+      visibility: visible;
+    }
+    25% {
+      width: 100%;
+      height: 0;
+      padding-top: 0;
+      visibility: visible;
+    }
+    50% {
+      height: 100%;
+      width: 100%;
+      visibility: visible;
+    }
+    75% {
+      visibility: visible;
+    }
+    100% {
+      visibility: visible;
+    }
+  }
+  
+  @keyframes revbottomright {
+    0% {
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+    }
+    25% {
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+    }
+    50% {
+      width: 100%;
+      height: 100%;
+      visibility: visible;
+    }
+    75% {
+      width: 100%;
+      height: 0;
+      padding-top: 0;
+      visibility: visible;
+    }
+    100% {
+      width: 0;
+      height: 0;
+      padding-top: 0;
+      visibility: hidden;
+    }
+  }
+  
+  @keyframes topleft {
+    0% {
+      width: 0;
+      height: 0;
+      padding-bottom: 0;
+      visibility: hidden;
+    }
+    25% {
+      width: 0;
+      height: 0;
+      padding-bottom: 0;
+      visibility: hidden;
+    }
+    50% {
+      width: 0;
+      height: 0;
+      padding-bottom: 0;
+      visibility: hidden;
+    }
+    75% {
+      width: 100%;
+      height: 0;
+      padding-bottom: 0;
+      visibility: visible;
+    }
+    100% {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  
+  @keyframes revtopleft {
+    0% {
+      width: 100%;
+      height: 100%;
+      opacity: 1;
+      visibility: visible;
+    }
+    25% {
+      width: 100%;
+      height: 0;
+      padding-bottom: 0;
+      visibility: visible;
+    }
+    50% {
+      width: 0;
+      height: 0;
+      padding-bottom: 0;
+      visibility: hidden;
+    }
+    75% {
+      width: 0;
+      height: 0;
+      padding-bottom: 0;
+      visibility: hidden;
+    }
+    100% {
+      width: 0;
+      height: 0;
+      padding-bottom: 0;
+      visibility: hidden;
+    }
+  }
+  
+  .resume  {
+    font-family: Gotham, Tahoma, sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #aaa;
+    transition: color 0.75s ease-in-out;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    position: relative;
+     -moz-border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg) 5 round;
+      -webkit-border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg) 5 round;
+      -o-border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg) 5 round;
+      border-image: url(http://maxschulmeister.com/sneakin/assets/images/svg/scanframe.svg) 5 round;
+  }
+  .resume a:hover {
+    transition: color 0.75s ease-in-out;
+  }
+  
+  .resume a:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    padding-right: 5px;
+    left: -5px;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid var(--color-primary);
+    border-right: 3px solid var(--color-primary);
+    visibility: hidden;
+  }
+  
+  .resume a:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding-left: 5px;
+    width: 100%;
+    height: 100%;
+    border-top: 3px solid var(--color-primary);
+    border-left: 3px solid var(--color-primary);
+    visibility: hidden;
+  }
+  
+  a:hover:before {
+    animation: topleft 0.5s ease-in-out forwards;
+  }
+  
+  a:hover:after {
+    animation: bottomright 0.5s ease-in-out forwards;
+  }
+  
+  .resume a.active:before {
+    animation: revtopleft 0.5s ease-in-out forwards;
+  }
+  
+  .resume a.active:after {
+    animation: revbottomright 0.5s ease-in-out forwards;
+  }
+  
+ .resume  a.active:before,
+  .resume a.active:after {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+  }
+  
+  .resume a.temp:before, a.temp:after {
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+  }
