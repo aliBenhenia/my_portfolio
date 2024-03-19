@@ -1,6 +1,6 @@
 "use client";
 
-import React,{use, useEffect, useState} from "react";
+import React,{useRef, useEffect, useState} from "react";
 import  "./Header.css";
 import Hamburger from 'hamburger-react'
 
@@ -8,6 +8,25 @@ const Header = () => {
   const [isOpen, setOpen] = useState(false)
   const styles = {
     backgroundColor: '#0A1930',
+  };
+  useEffect(() => {
+    const handleOutsideClick = (event) => {
+      // Close the menu if it is open and if the click is outside of the menu
+      if (isOpen)
+        setOpen(false);
+    };
+
+    // Add event listener when component mounts
+    document.body.addEventListener("click", handleOutsideClick);
+
+    // Remove event listener when component unmounts
+    return () => {
+      document.body.removeEventListener("click", handleOutsideClick);
+    };
+  }, [isOpen]);
+
+  const handleToggle = () => {
+    setOpen(!isOpen);
   };
   return (
     <header 
