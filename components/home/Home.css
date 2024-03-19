@@ -1,0 +1,13 @@
+#main
+{
+    font-family: 'SF Mono','Fira Code','Fira Mono','Roboto Mono',monospace; 
+}
+h2
+{
+    color: #64ffda;
+}
+h3
+{
+    line-height: 33px;
+    color: #A8B2D1;
+}
