@@ -1,3 +1,4 @@
+import About from "@/components/about/about";
 import Header from "../components/header/Header";
 import HomePage from "../components/home/HomePage";
 
@@ -8,6 +9,7 @@ export default function Home() {
      
         <Header />
         <HomePage />
+        <About />
      </div>
    </>
   );
