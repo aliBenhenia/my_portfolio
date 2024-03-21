@@ -32,7 +32,7 @@ const HomePage = () => {
                 </div>
             </div>
             <div className="center">
-                <a href="#">
+                <a href="#about">
                     <svg width="40" height="90" viewBox="0 0 50 130">
                         <rect id="scroll" x="0" y="5" rx="25" ry="25" width="50" height="120" stroke="#64ffda" fill="#0A1930" stroke-width="4"></rect>
                         <circle id="circle--shape" cx="25" cy="32" r="8" fill="#64ffda"></circle>
