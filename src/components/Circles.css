@@ -1,0 +1,108 @@
+
+@keyframes animate {
+  0%{
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+      border-radius: 0;
+  }
+  100%{
+      transform: translateY(-2000px) rotate(720deg);
+      border-radius: 50%;
+  }
+}
+
+.background {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: .3;
+  pointer-events: none; /* Allow clicks to pass through */
+  /* Add other styles for your fixed element */
+}
+.background li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 15px;
+  height: 15px;
+  background: #55E6A5;
+  animation: animate 14s linear infinite;
+  opacity: 0;
+}
+
+
+.background li:nth-child(0) {
+  left: 51%;
+  width: 224px;
+  height: 224px;
+  bottom: -224px;
+  animation-delay: 1s;
+}
+.background li:nth-child(1) {
+  left: 80%;
+  width: 162px;
+  height: 162px;
+  bottom: -162px;
+  animation-delay: 3s;
+}
+.background li:nth-child(2) {
+  left: 10%;
+  width: 60;
+  height: 60;
+  bottom: -222px;
+  animation-delay: 6s;
+}
+.background li:nth-child(3) {
+  left: 16%;
+  width: 100px;
+  height: 100px;
+  bottom: -100px;
+  animation-delay: 1s;
+}
+.background li:nth-child(4) {
+  left: 27%;
+  width: 253px;
+  height: 253px;
+  bottom: -253px;
+  animation-delay: 6s;
+}
+.background li:nth-child(5) {
+  left: 63%;
+  width: 132px;
+  height: 132px;
+  bottom: -132px;
+  animation-delay: 17s;
+}
+.background li:nth-child(6) {
+  left: 53%;
+  width: 123px;
+  height: 123px;
+  bottom: -123px;
+  animation-delay: 29s;
+}
+.background li:nth-child(7) {
+  left: 3%;
+  width: 147px;
+  height: 147px;
+  bottom: -147px;
+  animation-delay: 2s;
+}
+.background li:nth-child(8) {
+  left: 62%;
+  width: 127px;
+  height: 127px;
+  bottom: -127px;
+  animation-delay: 13s;
+}
+.background li:nth-child(9) {
+  left: 74%;
+  width: 267px;
+  height: 267px;
+  bottom: -267px;
+  animation-delay: 12s;
+}
