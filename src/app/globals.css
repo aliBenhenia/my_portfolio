@@ -2,11 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+:root { /* for default mode */
+  --primary-color: #F2F3F5;
+  --one: #02050A;
+  --one-background: #F2F3F5;
+  --card-background: #FFF;
+  --card-text: #02050A;
+  --card-sub-text: #545454;
+  --button-color-hover: #02050A;
+  --circle-img-border: #FFF;
+  --circle-img-filter: brightness(0) saturate(100%) invert(34%) sepia(0%) saturate(2216%) hue-rotate(304deg) brightness(90%) contrast(88%);
+  --menu-toggle-btn: #02050A;
+  --nav-menu-icon: brightness(0) saturate(100%) invert(1%) sepia(1%) saturate(4%) hue-rotate(261deg) brightness(99%) contrast(98%);
+  --background-blur: linear-gradient(95deg, rgba(255, 255, 255, 0.40) 0%, rgba(2, 5, 10, 0.20) 100%, rgba(255, 255, 255, 0.20) 100%);
+  --designer-text: #FFF;
+  --dev-icons: brightness(0) saturate(100%) invert(1%) sepia(0%) saturate(7497%) hue-rotate(68deg) brightness(97%) contrast(99%);
+  --uiux: #02050A;
+  --uiux-hover: brightness(0) saturate(100%) invert(100%) sepia(23%) saturate(5408%) hue-rotate(72deg) brightness(95%) contrast(89%);
+  --uiux-text-hover: #55E6A5;
+  --bag: brightness(0) saturate(100%) invert(2%) sepia(4%) saturate(7498%) hue-rotate(139deg) brightness(101%) contrast(99%);
+  --background-hover-card: rgba(0, 0, 0, 0.7);
 }
+
+.dark-mode {
+  --primary-color: #02050A;
+  --one: #55E6A5;
+  --one-background: #141C27;
+  --card-background: #09101A;
+  --card-text: #FFF;
+  --card-sub-text: #A2A2A2;
+  --button-color-hover: #FFF;
+  --circle-img-border: #141C27;
+  --circle-img-filter: brightness(0) saturate(100%) invert(69%) sepia(0%) saturate(0%) hue-rotate(74deg) brightness(94%) contrast(93%);
+  --menu-toggle-btn: #141C27;
+  --nav-menu-icon: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(181deg) brightness(103%) contrast(103%);
+  --background-blur: linear-gradient(95deg, rgba(2, 5, 10, 0.40) 0%, rgba(2, 5, 10, 0.20) 100%);
+  --designer-text: #A2A2A2;
+  --dev-icons: brightness(0) saturate(100%) invert(86%) sepia(5%) saturate(4533%) hue-rotate(91deg) brightness(98%) contrast(85%);
+  --uiux: #55E6A5;
+  --uiux-hover: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(2%) hue-rotate(275deg) brightness(103%) contrast(103%);
+  --uiux-text-hover: #FFF;
+  --bag: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(0%) hue-rotate(286deg) brightness(101%) contrast(101%);
+  --background-hover-card: rgba(172, 171, 171, 0.603);
+}
+
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -17,8 +56,8 @@
 }
 
 body {
-  background-color: #02050A;
-  color: aliceblue;
+  background-color: var(--primary-color);
+  color: var(--one);
 }
 
 @layer utilities {

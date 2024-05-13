@@ -1,7 +1,7 @@
 "use client";
 
 import Circles from "@/components/Circles";
-import Image from "next/image";
+import Nav from "@/components/Nav";
 import {useEffect, useState} from "react";
 
 export default function Home() {
@@ -16,6 +16,7 @@ export default function Home() {
       <div className="container mx-auto">
         <div className="cursor" style={{top:cursor.y, left:cursor.x}}></div>
         <Circles />
+        <Nav />
       </div>
     </>
   );

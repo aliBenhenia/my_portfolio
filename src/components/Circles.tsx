@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import styled, {keyframes} from "styled-components";
-import "./Circles.css";
+
+import "./styles/Circles.css";
 
 const Circles = () => {
     return (

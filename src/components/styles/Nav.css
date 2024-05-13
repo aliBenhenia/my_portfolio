@@ -1,0 +1,11 @@
+.navItem
+{
+    position: absolute;
+    background-color: var(--card-background);
+    color: var(card--text);
+    width: 78px;
+    height: 500px;
+    top: 24%;
+    left: 33px;
+    border-radius: 50px;
+}
