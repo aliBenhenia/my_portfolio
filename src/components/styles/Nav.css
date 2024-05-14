@@ -3,9 +3,66 @@
     position: absolute;
     background-color: var(--card-background);
     color: var(card--text);
-    width: 78px;
+    width: 62px;
     height: 500px;
-    top: 24%;
+    top: 14%;
     left: 33px;
     border-radius: 50px;
 }
+.navItem ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.navItem ul li
+{
+    padding: 10px;
+    text-align: center;
+    border-bottom: 4px solid var(--primary-color);
+    height: 78px;
+    width: 62px;
+    display: flex;
+    justify-content: center;
+}
+.navItem ul li:hover
+{
+    color: #55E6A5;
+    border-bottom: 4px solid #55E6A5;
+    transition: all .7s;
+}
+
+#navIcon
+{
+    position: absolute;
+    font-size: 33px;
+    top: 2%;
+    left: 40px;
+}
+#modeIcon
+{
+    position: absolute;
+    font-size: 33px;
+    top: 2%;
+    right: 40px;
+    transition: .4s;
+}
+
+.iconStyle
+{
+    color: var(--card-text);
+}
+.iconStyle:hover
+{
+    color: #55E6A5;
+}
+
+.darkMenu {
+    background-color: #333!important;
+    color: #fff;
+  }
+  
+  .lightMenu {
+    background-color: #fff!important;
+    color: red;
+  }

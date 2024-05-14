@@ -46,7 +46,6 @@
   --background-hover-card: rgba(172, 171, 171, 0.603);
 }
 
-
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -58,6 +57,7 @@
 body {
   background-color: var(--primary-color);
   color: var(--one);
+  transition: background-color  .4s ease; 
 }
 
 @layer utilities {
