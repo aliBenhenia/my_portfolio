@@ -9,12 +9,14 @@
     left: 33px;
     border-radius: 50px;
 }
+
 .navItem ul
 {
     list-style-type: none;
     padding: 0;
     margin: 0;
 }
+
 .navItem ul li
 {
     padding: 10px;

@@ -1,0 +1,59 @@
+#contentHome
+{
+
+}
+.cardHero
+{
+    /* background-color: blue; */
+    /* border-image: linear-gradient(blue, red) 1; */
+    border: 2px solid var(--circle-img-border);
+    width:390px;
+    height: 629px;
+    border-radius: 30px;
+    border-top-left-radius: 70px;
+    padding: 5px;
+}
+.cardHero img
+{
+    height: 80%;
+    width: 100%;
+    border-radius: 30px;
+    border-top-left-radius: 70px;
+}
+.cardContent
+{
+    background-color: var(--primary-color);
+    height:629px;
+    width: 810px;
+    border-radius: 30px;
+}
+@media screen and (max-width: 768px)
+{
+    .cardHero
+    {
+        width: 260px;
+        height: 419px;
+    }
+    .cardHero img
+    {
+        /* height: 80%;
+        width: 100%;
+        border-radius: 30px;
+        border-top-left-radius: 70px; */
+    }
+    .cardContent
+    {
+        width: 100%;
+        height: 100%;
+    }
+    
+}
+@media screen and (max-width: 425px)
+{
+    .cardHero img
+    {
+        width: 200px;
+        height: 320px;
+    }
+    
+}
