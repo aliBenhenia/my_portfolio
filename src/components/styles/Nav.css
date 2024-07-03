@@ -4,7 +4,7 @@
     background-color: var(--card-background);
     color: var(card--text);
     width: 62px;
-    height: 500px;
+    /* height: 500px; */
     top: 14%;
     left: 33px;
     border-radius: 50px;
@@ -21,13 +21,16 @@
 {
     padding: 10px;
     text-align: center;
-    border-bottom: 4px solid var(--primary-color);
     height: 78px;
     width: 62px;
     display: flex;
     justify-content: center;
 }
-.navItem ul li:hover
+.navItem ul li:not(:last-child)
+{
+    border-bottom: 4px solid var(--primary-color);
+}
+.navItem ul li:not(:last-child):hover
 {
     color: #55E6A5;
     border-bottom: 4px solid #55E6A5;

@@ -23,6 +23,7 @@
   opacity: .3;
   pointer-events: none; /* Allow clicks to pass through */
   /* Add other styles for your fixed element */
+  z-index: -1;
 }
 .background li {
   position: absolute;

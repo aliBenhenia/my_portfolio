@@ -58,10 +58,10 @@ const Nav = ()=>{
                         <FileOutlined className='iconStyle'/>
                     </li>
                     <li className='text-lg'>
-                        <FileOutlined className='iconStyle'/>
+                        <MenuFoldOutlined className='iconStyle'/>
                     </li>
                     <li className='text-lg'>
-                        <FileOutlined className='iconStyle'/>
+                        <PieChartOutlined className='iconStyle'/>
                     </li>
                 </ul>
             </nav>
