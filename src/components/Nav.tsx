@@ -1,5 +1,5 @@
 import { MenuFoldOutlined,MenuUnfoldOutlined, PieChartOutlined,DesktopOutlined,MailOutlined,HomeOutlined ,UserOutlined, FileOutlined, SolutionOutlined, MoonOutlined,SunOutlined} from '@ant-design/icons';
-import "./styles/Nav.css";
+import styles from  "./styles/Nav.module.css";
 import { useState} from 'react'
 import Hamburger from 'hamburger-react'
 import {Drawer, Button  ,Menu} from 'antd';
@@ -34,34 +34,34 @@ const Nav = ()=>{
     }
     return (
         <>
-            <div id="navIcon" className='iconStyle' onClick={()=>setToggle(!toggle)}>
+            <div id={styles["navIcon"]} className={styles.iconStyle} onClick={()=>setToggle(!toggle)}>
                 <Hamburger/>
             </div>
 
-            <div id="modeIcon" onClick={handleMode}>
+            <div id={styles["modeIcon"]} onClick={handleMode}>
                {
                     isDark ? <MoonOutlined className='iconStyle' /> : <SunOutlined className='iconStyle'/>
                }
             </div>
-            <nav className='navItem'>
+            <nav className={styles.navItem}>
                 <ul>
-                    <li className='text-lg activeNav'>
-                        <HomeOutlined className='iconStyle'/>
+                    <li className={`'text-lg ${styles.activeNav}'`}>
+                        <HomeOutlined className={styles.iconStyle}/>
                     </li>
                     <li className='text-lg'>
-                        <UserOutlined  className='iconStyle'/>
+                        <UserOutlined  className={styles.iconStyle}/>
                     </li>
                     <li className='text-lg'>
-                        <SolutionOutlined className='iconStyle'/>
+                        <SolutionOutlined className={styles.iconStyle}/>
                     </li>
                     <li className='text-lg'>
-                        <FileOutlined className='iconStyle'/>
+                        <FileOutlined className={styles.iconStyle}/>
                     </li>
                     <li className='text-lg'>
-                        <MenuFoldOutlined className='iconStyle'/>
+                        <MenuFoldOutlined className={styles.iconStyle}/>
                     </li>
                     <li className='text-lg'>
-                        <PieChartOutlined className='iconStyle'/>
+                        <PieChartOutlined className={styles.iconStyle}/>
                     </li>
                 </ul>
             </nav>

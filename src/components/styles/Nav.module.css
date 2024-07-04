@@ -4,10 +4,10 @@
     background-color: var(--card-background);
     color: var(card--text);
     width: 62px;
-    /* height: 500px; */
     top: 14%;
     left: 33px;
     border-radius: 50px;
+    z-index: 100;
 }
 
 .navItem ul
