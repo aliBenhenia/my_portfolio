@@ -32,9 +32,13 @@ const Nav = ()=>{
         document.body.classList.toggle("dark-mode");
         setIsDark(!isDark);
     }
+    const handleNavBar = ()=>
+    {
+        setToggle(!toggle);
+    }
     return (
         <>
-            <div id={styles["navIcon"]} className={styles.iconStyle} onClick={()=>setToggle(!toggle)}>
+            <div id={styles["navIcon"]} className={`${styles.iconStyle}`} onClick={handleNavBar}>
                 <Hamburger/>
             </div>
 
@@ -43,7 +47,7 @@ const Nav = ()=>{
                     isDark ? <MoonOutlined className='iconStyle' /> : <SunOutlined className='iconStyle'/>
                }
             </div>
-            <nav className={styles.navItem}>
+            <nav className={`${styles.navItem} + ${toggle && styles.activeNav}`}>
                 <ul>
                     <li className={`'text-lg ${styles.activeNav}'`}>
                         <HomeOutlined className={styles.iconStyle}/>
