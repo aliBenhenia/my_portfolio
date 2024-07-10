@@ -27,6 +27,14 @@
     border-bottom-right-radius: 30px;
     color: #fff;
 }
+.info button
+{
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+}
 .cardHero img
 {
     border-radius: 30px;
@@ -63,6 +71,19 @@
     {
         width: 260px;
         height: 419px;
+    }
+    .info 
+    {
+        /* padding: 1rem; */
+        height: 50%;
+    }
+    .info button
+    {
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1rem;
+        margin-top: 1rem;
     }
     .cardContent
     {
